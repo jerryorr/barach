@@ -1,0 +1,33 @@
+{
+  "name": "barach",
+  "version": "0.0.1",
+  "description": "Collections and formats data from various sources to be used in Dash.",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha -R spec ./lib/complaints/test/test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jerryorr/barach.git"
+  },
+  "author": "Jerry Orr <jerry.orr@spiderstrategies.com>",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "gitHead": "dfc33ed26bd6bf01c83f5eb35912d2ef1cd5c210",
+  "dependencies": {
+    "express": "~3.4.4",
+    "request": "~2.27.0",
+    "JSONStream": "~0.7.1",
+    "lodash": "~2.2.1",
+    "moment": "~2.4.0",
+    "csv-stream": "~0.1.3"
+  },
+  "devDependencies": {
+    "nock": "~0.22.1",
+    "mocha": "~1.14.0"
+  },
+  "engines": {
+    "node": "0.10.x",
+    "npm": "1.2.x"
+  }
+}
