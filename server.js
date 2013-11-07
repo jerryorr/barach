@@ -3,6 +3,7 @@ var express = require('express')
 
 var app = express()
 
+app.get('/status', routes.status)
 app.get('/complaints/creditCard/worst', routes.creditCard.worst)
 app.get('/complaints/creditCard/recent', routes.creditCard.recent)
 app.get('/flu', routes.flu)
