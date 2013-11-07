@@ -4,8 +4,13 @@ var express = require('express')
 var app = express()
 
 app.get('/status', routes.status)
+
 app.get('/complaints/creditCard/worst', routes.creditCard.worst)
 app.get('/complaints/creditCard/recent', routes.creditCard.recent)
+
+app.get('/complaints/mortgage/worst', routes.mortgage.worst)
+app.get('/complaints/mortgage/recent', routes.mortgage.recent)
+
 app.get('/flu', routes.flu)
 
 var port = process.env.PORT || 5000
