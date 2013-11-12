@@ -2,6 +2,7 @@ var express = require('express')
   , routes = require('./lib/routes')
 
 var app = express()
+app.use(express.logger())
 
 app.get('/status', routes.status)
 
